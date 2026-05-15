@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamentos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            background-color: rgb(76, 133, 255);
+            display: flex;
+            height: 30px;
+            margin-top: 30px;
+            /*Alinhamento horizontal          -> */
+            /*justify-content: start          -> inicio da tela*/
+            /*justify-content: end            -> final da tela*/
+            /*justify-content: center         -> meio da tela*/
+            /*justify-content: space-around;  -> calcula o espaçamento antes e depois da letra*/
+            /*justify-content: space-between  -> espaçamento depois da letra*/
+            /*justify-content: space-evenly   -> espaçamento se repete*/
+            /*Alinhamento vertical->*/
+            /* justify-content: center;*/
+            align-items: start;
+                    }
+        .item {
+            background-color: rgb(159, 206, 238);
+            padding: 5px;
+            border: 1px solid black;
+            margin-top: 0px;
+        }
+
+        #container1 {
+
+            padding: 5px;
+            justify-content: start;
+            display: flex;
+            background-color: brown;
+            margin-top: 30px;                     
+        }
+
+        #container2 {
+            padding: 5px;
+            justify-content: end;
+            display: flex;
+            background-color: brown;
+            margin-top: 30px;
+            height: 30px;
+            align-items: center;
+        }        
+
+        #container3 {
+            padding: 5px;
+            justify-content: center;
+            display: flex;
+            background-color: brown;
+            margin-top: 30px;
+            height: 30px;
+            align-items: center;
+        }        
+
+        #container4 {
+            padding: 5px;
+            justify-content: space-between;
+            display: flex;
+            background-color: brown;
+            margin-top: 30px;
+            height: 30px;
+            align-items: center;
+        }
+
+        #container5 {
+            padding: 5px;
+            justify-content: space-evenly;
+            display: flex;
+            background-color: brown;
+            margin-top: 30px;
+            height: 30px;
+            align-items: center;
+        }
+
+        #container6 {
+            padding: 5px;
+            justify-content: space-around;
+            display: flex;
+            background-color: brown;
+            margin-top: 30px;
+            height: 30px;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com alinhamentos</h1>
+    <div id="container1">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+
+    </div>
+    <div id="container2">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+
+    </div>
+    <div id="container3">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+
+    </div>
+    <div id="container4">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+
+    </div>
+    <div id="container5">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+
+    </div>
+    <div id="container6">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+
+    </div>
+</body>
+
+</html>

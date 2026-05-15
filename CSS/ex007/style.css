@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+div {
+    background-color: rgb(248, 175, 157);
+    width: 200px;
+    /* Largura */
+    height: 200px;
+    /* Altura */
+    border: 3px solid black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+div:hover {
+    background-color: rgb(252, 180, 180);
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    width: 250px;
+    height: 250px;
+
+}
+
+div {
+    background-color: rgb(243, 166, 146);
+
+
+}
+
+#Primeiro:hover{
+    background-color: red;
+}
+#Segundo:hover{
+    background-color: greenyellow
+}
+#Terceiro:hover{
+    background-color: blue;
+}
+
+

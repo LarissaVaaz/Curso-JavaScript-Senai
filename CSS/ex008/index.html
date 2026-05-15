@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+#noticias{
+    background-color: cornsilk;
+    display: flex;
+flex-direction: row;
+
+
+
+}
+        p {
+
+            background-color: aquamarine;
+            margin: 20px;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Precisamos adicionar o display: flex; no cantainer - > pai dos elementos que precisam ser flexiveis-->
+
+
+    <section id="noticias">
+        <p>A</p>
+        
+
+        <p>B</p>
+
+        <p>C</p>
+        
+
+    </section>
+
+
+
+</body>
+
+</html>
