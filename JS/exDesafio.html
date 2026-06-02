@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            background-color: rgb(254, 255, 255);
+            width: 300px;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid rgb(128, 194, 142);
+            box-shadow: 0px 0px 10px rgba(red, green, blue, alpha);
+        }
+
+        label {
+            display: flex;
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 2px 1px 5px 0px;
+            color: green;
+
+        }
+
+
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(94, 202, 109);
+            color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form id="formulario">
+        <h1>Login</h1>
+        <label for="email">Email:</label>
+        <input type="text" id="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" name="" id="senha" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        // let form = document.getElementById('formulario')
+        //  console.log(form)
+
+        // form.addEventListener('submit', function (event) {
+        //   event.preventDefault() // PARA CANCELAR/PREVINIR O COMPORTAMENTO PADRÃO (Enviar)
+
+
+        //  let email = document.getElementById('email').value
+
+        // if (email == "larissa@gmail.com") {
+        //     console.log(email)
+        //     // window.location.href="pagina2.html"
+        //  }
+
+        //  let senha = document.getElementById('senha').value
+        //  if (senha == "larissaa") {
+        //       console.log(senha)
+        //  }
+        // })
+        // else (email == "larissa@gmail.com"){
+        //  console.log(email)
+        //  }
+
+
+        // let body = document.querySelector('body')
+        //  body.addEventListener('keypress', function (event) {
+
+        //    if (event.key == 'f') {
+        //       console.log(event)
+        //       console.log("A TECLA 'F' FOI PRESSIONADA!!")
+        //   }
+
+        const form = document.getElementById('formulario')
+
+        const emailCorreto = 'larissa@gmail.com'
+        const senhaCorreta = '12345'
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault()
+
+
+
+            const emailUsuario = document.getElementById('email').value
+            const senhaUsuario = document.getElementById('senha').value
+
+            if (emailUsuario === emailCorreto && senhaUsuario === senhaCorreta) {
+                // Se tudo estiver correto
+                window.location.href = 'ex015.html '
+            } else {
+                // Se email ou senha estiver incorreto
+                alert("Dados incorretos!!")
+                form.reset()
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

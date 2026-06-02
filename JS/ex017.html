@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: rgb(187, 228, 247);
+            width: 300px;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 0px 0px 10px rgba(red, green, blue, alpha);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 2px 1px 5px 0px;
+        }
+
+        .radio,
+        .checkbox {
+            width: 10%;
+            box-shadow: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background-color: rgb(0, 0, 95);
+            box-shadow: 2px 1px 5px 0px;
+
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 2px 1px 5px 0px rgb(0, 0, 95);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form id="form">
+        <h1>Trabalhando com formulários</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Nome" required>
+
+        <label for="">Idade:</label>
+        <input type="number" name="Idade" id="idade" max="10" placeholder="Idade" required>
+
+        <label for="">Notas:</label>
+        <input type="number" name="notas" id="notas" min="0" max="10" step="0,1">
+
+        <label for="password">Senha:</label>
+        <input type="password" name="" id="password" required>
+
+        <label for="">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+
+        <label for="">Estado Civil:</label>
+        <input class="radio" type="radio" name="status" id="casado">Casado
+        <input class="radio" type="radio" name="status" id="solteiro">Solteiro
+        <input class="radio" type="radio" name="status" id="viuvo">Viuvo
+
+
+        <label for="">Atividades:</label>
+        <input class="checkbox" type="checkbox" name="status" id="bike">Bike
+        <input class="checkbox" type="checkbox" name="status" id="natação">Natação
+        <input class="checkbox" type="checkbox" name="status" id="box">Box
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        let form = document.getElementById('form')
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault() // PARA CANCELAR/PREVINIR O COMPORTAMENTO PADRÃO (Enviar)
+            console.log("O SUBMIT ACONTECEU!!")
+
+            let nomeUsuario = document.getElementById('nome').value
+            alert(`Olá, ${nomeUsuario}! Formulario enviado!!`)
+        })
+
+
+        let body = document.querySelector('body')
+        body.addEventListener('keypress', function (event) {
+
+            if (event.key == 'f') {
+                console.log(event)
+                console.log("A TECLA 'F' FOI PRESSIONADA!!")
+            }
+
+
+        })
+    </script>
+
+</body>
+
+</html>

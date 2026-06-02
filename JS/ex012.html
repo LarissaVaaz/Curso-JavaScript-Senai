@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegar elementos</title>
+</head>
+
+<body>
+    <h1>Pegar elementos</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas commodi, ea molestias dignissimos nihil quidem porro, tempore atque iste similique sit quae cupiditate earum dolorem consequatur expedita,exercitationem nesciunt!</p>
+
+    <p>Testando novos parágrafos</p>
+
+    <div id="container">
+        TESTES
+    </div>
+
+    <ul>
+<li class="item">Item 1</li>
+<li class="item2">Item2</li>
+    </ul>
+
+    <script>
+        let elemento = window.document.getElementById("container")
+        console.log(elemento)
+
+        elemento.style.backgroundColor = "red"
+        elemento.style.color = "white"
+
+
+        let itensLista = window.document.getElementsByClassName(`item`)
+console.log(itensLista)
+
+itensLista.style.backgroundColor = "green"
+    </script>
+
+</body>
+
+</html>
